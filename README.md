@@ -9,7 +9,6 @@ Welcome to my personal portfolio website! This repository contains the source co
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
