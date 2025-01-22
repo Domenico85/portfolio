@@ -12635,3 +12635,20 @@ textarea.form-control {
     height: auto;
   }
 }
+
+.close-menu {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 34px;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.close-menu:focus {
+  outline: none;
+}
