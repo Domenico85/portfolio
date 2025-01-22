@@ -61,6 +61,31 @@ AOS.init({
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".owl-carousel");
+
+    let startY = 0;
+    let isDraggingVertically = false;
+
+    carousel.addEventListener("touchstart", function (event) {
+      startY = event.touches[0].clientY;
+      isDraggingVertically = false;
+    });
+
+    carousel.addEventListener("touchmove", function (event) {
+      const currentY = event.touches[0].clientY;
+      const deltaY = Math.abs(currentY - startY);
+
+      if (deltaY > 10) {
+        isDraggingVertically = true;
+      }
+
+      if (isDraggingVertically) {
+        event.stopPropagation();
+      }
+    });
+  });
+
   var onePageClick = function () {
     $(document).on("click", '#ftco-nav a[href^="#"]', function (event) {
       event.preventDefault();
